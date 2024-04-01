@@ -16,6 +16,10 @@ header {
   height: 4.2rem;
   background-color: #fff;
   z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .heading {
@@ -37,6 +41,7 @@ nav ul li a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 header #contact {
@@ -241,4 +246,17 @@ footer {
   text-decoration: none;
   color: #000000;
   padding-bottom: 10px;
+}
+
+.highlighted {
+  background-color: #c68484;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 99px;
+  text-decoration: none;
+  -webkit-border-radius: 99px;
+  -moz-border-radius: 99px;
+  -ms-border-radius: 99px;
+  -o-border-radius: 99px;
+  transition: all 0.3s ease;
 }

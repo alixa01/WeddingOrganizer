@@ -4,35 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+    <title>WeddingOrganizer</title>
   </head>
   <body>
     <header>
       <p class="heading">Moonlight</p>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#services-section">Services</a></li>
-          <li><a href="#about-section">About</a></li>
+          <li><a href="#home-section" class="targetElement">Home</a></li>
+          <li><a href="#services-section" class="targetElement">Services</a></li>
+          <li><a href="#galeri-section" class="targetElement">Galery</a></li>
+          <li><a href="#about-section" class="targetElement">About</a></li>
           <li><a href="#" id="contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="dashboard">
+      <section class="dashboard" id="home-section">
         <div class="dashboard-bg">
-          <img
-            src="https://nativeroaming.com/wp-content/uploads/2021/01/rustic-wedding-ceremony-native-roaming.jpg"
-            alt=""
-          />
+          <img src="https://nativeroaming.com/wp-content/uploads/2021/01/rustic-wedding-ceremony-native-roaming.jpg" alt="" />
         </div>
         <div class="dashboard-text">
           <h1>Lorem, ipsum dolor.</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, id
-            adipisci.
-          </p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, id adipisci.</p>
           <button>Create Your Plan</button>
         </div>
         <!-- <div class="dashboard-image">
@@ -40,7 +37,7 @@
         </div> -->
       </section>
 
-      <section class="bg">
+      <section class="bg" id="galeri-section">
         <h1>Gallery</h1>
         <div class="bg-img">
           <img src="https://placehold.co/800x400" alt="" />
@@ -53,55 +50,37 @@
           <div class="card-1">
             <img src="https://placehold.co/300x200" alt="" />
             <h2>Venue Selection</h2>
-            <p>
-              This service simplifies one of the most crucial aspects: picking
-              the...
-            </p>
+            <p>This service simplifies one of the most crucial aspects: picking the...</p>
             <button>Read More</button>
           </div>
           <div class="card-1">
             <img src="https://placehold.co/300x200" alt="" />
             <h2>Vendor Coordination</h2>
-            <p>
-              From florists to photographers, caterers to musicians, this
-              service...
-            </p>
+            <p>From florists to photographers, caterers to musicians, this service...</p>
             <button>Read More</button>
           </div>
           <div class="card-1">
             <img src="https://placehold.co/300x200" alt="" />
             <h2>Design and Decor</h2>
-            <p>
-              This is where your wedding's visual story comes to life. Through
-              detailed...
-            </p>
+            <p>This is where your wedding's visual story comes to life. Through detailed...</p>
             <button>Read More</button>
           </div>
           <div class="card-1">
             <img src="https://placehold.co/300x200" alt="" />
             <h2>Timeline Creation</h2>
-            <p>
-              Every minute of your wedding day is planned with precision. This
-              service includes...
-            </p>
+            <p>Every minute of your wedding day is planned with precision. This service includes...</p>
             <button>Read More</button>
           </div>
           <div class="card-1">
             <img src="https://placehold.co/300x200" alt="" />
             <h2>Guest Management</h2>
-            <p>
-              This encompasses RSVP tracking, accommodations, and transportation
-              for your...
-            </p>
+            <p>This encompasses RSVP tracking, accommodations, and transportation for your...</p>
             <button>Read More</button>
           </div>
           <div class="card-1">
             <img src="https://placehold.co/300x200" alt="" />
             <h2>Day-of Coordination</h2>
-            <p>
-              On your wedding day, your organizer becomes the point person for
-              all vendors, guests...
-            </p>
+            <p>On your wedding day, your organizer becomes the point person for all vendors, guests...</p>
             <button>Read More</button>
           </div>
         </div>
@@ -111,11 +90,8 @@
         <div class="about-content">
           <h1>About Us</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quisquam, voluptates.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.
           </p>
         </div>
       </section>
@@ -124,10 +100,7 @@
     <footer>
       <div class="footer">
         <h1 class="footer-heading">Moonlight</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rem
-          harum quos excepturi?
-        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rem harum quos excepturi?</p>
       </div>
       <div class="footer">
         <h3>Services</h3>

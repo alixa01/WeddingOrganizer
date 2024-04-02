@@ -1,128 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="jquery.js"></script>
-    <title>WeddingOrganizer</title>
-  </head>
-  <body>
-    <header>
-      <p class="heading">Moonlight</p>
-      <nav>
-        <ul>
-          <li><a href="#home-section" class="targetElement">Home</a></li>
-          <li><a href="#gallery-section" class="targetElement">Gallery</a></li>
-          <li>
-            <a href="#services-section" class="targetElement">Services</a>
-          </li>
-          <li><a href="#about-section" class="targetElement">About</a></li>
-          <li><a href="#" id="contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <section class="dashboard" id="home-section">
-        <div class="dashboard-bg">
-          <img src="https://nativeroaming.com/wp-content/uploads/2021/01/rustic-wedding-ceremony-native-roaming.jpg" alt="" />
-        </div>
-        <div class="dashboard-text">
-          <h1>
-            Crafting Timeless <br />
-            <span class="highlight">Weddings</span>
-          </h1>
-          <p>"Promises made, dreams unveild, a life time of love begins."</p>
-          <button>Create Your Plan</button>
-        </div>
-        <!-- <div class="dashboard-image">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="jquery.js"></script>
+  <title>WeddingOrganizer</title>
+</head>
+
+<body>
+  <header>
+    <p class="heading">Moonlight</p>
+    <nav>
+      <ul>
+        <li><a href="#home-section" class="targetElement">Home</a></li>
+
+        <li>
+          <a href="#services-section" class="targetElement">Services</a>
+        </li>
+        <li><a href="#about-section" class="targetElement">About</a></li>
+        <li><a href="#gallery-section" class="targetElement">Gallery</a></li>
+        <li><a href="#" id="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="dashboard" id="home-section">
+      <div class="dashboard-bg">
+        <img src="https://nativeroaming.com/wp-content/uploads/2021/01/rustic-wedding-ceremony-native-roaming.jpg" alt="" />
+      </div>
+      <div class="dashboard-text">
+        <h1>
+          Perjanjian Abadi <br />
+          <span class="highlight">Weddings</span>
+        </h1>
+        <p>"Janji dibuat, mimpi terselubung, waktu cinta seumur hidup dimulai."</p>
+        <button > <a href="#services-section" style="color: black; text-decoration:none ;">Buat Impian Mu</a></button>
+      </div>
+      <!-- <div class="dashboard-image">
           <img src="https://placehold.co/400" alt="" />
         </div> -->
-      </section>
+    </section>
 
-      <section class="gallery" id="gallery-section">
-        <h1>Gallery</h1>
-        <div class="gallery-img">
-          <img src="https://placehold.co/800x400" alt="" />
+    <section class="services" id="services-section">
+      <h1>Our Services</h1>
+      <div class="services-card">
+        <div class="card-1" id="service1">
+          <img class="btn-description" src="https://i.imgur.com/319C0aV.jpg" alt="" />
+          <h2>Venue Selection</h2>
+          <p>
+            Layanan ini menyederhanakan salah satu aspek yang paling penting: memilih...
+          </p>
+          <button class="btn-description">Read More</button>
         </div>
-      </section>
 
-      <section class="services" id="services-section">
-        <h1>Our Services</h1>
-        <div class="services-card">
-          <div class="card-1" id="service1">
-            <img src="https://i.imgur.com/319C0aV.jpg" alt="" />
-            <h2>Venue Selection</h2>
-            <p>
-              This service simplifies one of the most crucial aspects: picking
-              the...
-            </p>
-            <button class="btn-description">Read More</button>
-          </div>
+        <div class="card-1" id="service2">
+          <img class="btn-description" src="https://i.imgur.com/jtP9bg2.jpg" alt="" />
+          <h2>Vendor Coordination</h2>
+          <p>
+            Dari toko bunga hingga fotografer, katering hingga musisi, ini
+            dinas...
+          </p>
+          <button class="btn-description">Read More</button>
+        </div>
 
-          <div class="card-1" id="service2">
-            <img src="https://i.imgur.com/jtP9bg2.jpg" alt="" />
-            <h2>Vendor Coordination</h2>
-            <p>
-              From florists to photographers, caterers to musicians, this
-              service...
-            </p>
-            <button class="btn-description">Read More</button>
-          </div>
+        <div class="card-1" id="service3">
+          <img class="btn-description" src="https://i.imgur.com/6vieBw7.jpg" alt="" />
+          <h2>Design and Decor</h2>
+          <p>
+            Di sinilah kisah visual pernikahan Anda menjadi hidup. Melalui
+            Rinci...
+          </p>
+          <button class="btn-description">Read More</button>
+        </div>
 
-          <div class="card-1" id="service3">
-            <img src="https://i.imgur.com/6vieBw7.jpg" alt="" />
-            <h2>Design and Decor</h2>
-            <p>
-              This is where your wedding's visual story comes to life. Through
-              detailed...
-            </p>
-            <button class="btn-description">Read More</button>
-          </div>
+        <div class="card-1" id="service4">
+          <img class="btn-description" src="https://i.imgur.com/ZdEIzU5.jpeg" alt="" />
+          <h2>Timeline Creation</h2>
+          <p>
+            Setiap menit dari hari pernikahan Anda direncanakan dengan presisi. Ini
+            Layanan termasuk...
+          </p>
+          <button class="btn-description">Read More</button>
+        </div>
 
-          <div class="card-1" id="service4">
-            <img src="https://i.imgur.com/ZdEIzU5.jpeg" alt="" />
-            <h2>Timeline Creation</h2>
-            <p>
-              Every minute of your wedding day is planned with precision. This
-              service includes...
-            </p>
-            <button class="btn-description">Read More</button>
-          </div>
+        <div class="card-1" id="service5">
+          <img class="btn-description" src="https://i.imgur.com/PSwvpem.jpg" alt="" />
+          <h2>Guest Management</h2>
+          <p>
+            Ini mencakup pelacakan RSVP, akomodasi, dan transportasi
+            untuk...
+          </p>
+          <button class="btn-description">Read More</button>
+        </div>
 
-          <div class="card-1" id="service5">
-            <img src="https://i.imgur.com/PSwvpem.jpg" alt="" />
-            <h2>Guest Management</h2>
-            <p>
-              This encompasses RSVP tracking, accommodations, and transportation
-              for your...
-            </p>
-            <button class="btn-description">Read More</button>
-          </div>
+        <div class="card-1" id="service6">
+          <img class="btn-description" src="https://i.imgur.com/x4OXH8z.png" alt="" />
+          <h2>Day-of Coordination</h2>
+          <p>
+            Pada hari pernikahan Anda, penyelenggara Anda menjadi orang yang tepat untuk
+            semua vendor, tamu...
+          </p>
+          <button class="btn-description">Read More</button>
+        </div>
 
-          <div class="card-1" id="service6">
-            <img src="https://i.imgur.com/x4OXH8z.png" alt="" />
-            <h2>Day-of Coordination</h2>
-            <p>
-              On your wedding day, your organizer becomes the point person for
-              all vendors, guests...
-            </p>
-            <button class="btn-description">Read More</button>
-          </div>
-
-          <div class="popup" style="display: none">
-            <div class="popup-content">
-              <span class="close-btn">&times;</span>
-              <h1 class="services"></h1>
-              <p class="description"></p>
-            </div>
+        <div class="popup" style="display: none">
+          <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h1 class="services"></h1>
+            <p class="description"></p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="about" id="about-section">
+    <section class="about" id="about-section">
       <div class="about-content">
         <div class="about-card">
           <h1>About Us</h1>
@@ -130,12 +125,32 @@
         </div>
         <div class="card-2">
           <p>
-            Wedding has proven to be a big and vast creative industry in Indonesia. Born with the idea that wedding preparation is one of the most important moments in the life of every single person and with its
-            mission to connect between each and everyone of the ready-to-get married individual to the wedding industries through its media, store, and wedding exhibitions, Weddingku was established to become the
-            leading and the most integrated wedding media, agency and other services in Indonesia. Through its wedding online portal, content and publishing division, wedding exhibitions, online wedding store, and
-            also a honeymoon travel agency, Weddingku has proved it existence for more than twelve years to become most sought after wedding directory in Indonesia.
+            pernikahan telah terbukti menjadi industri kreatif yang besar dan luas di Indonesia. Lahir dengan gagasan bahwa persiapan pernikahan
+            adalah salah satu momen terpenting dalam kehidupan setiap orang dan dengan misinya untuk menghubungkan antara masing-masing dan semua
+            orang dari individu yang siap menikah dengan industri pernikahan melalui media, toko, dan pameran pernikahan, Moonlight didirikan untuk menjadi media pernikahan,
+            agensi dan layanan lainnya yang terkemuka dan paling terintegrasi di Indonesia. Melalui portal online pernikahan, divisi konten dan penerbitan, pameran pernikahan, dan toko pernikahan online.
           </p>
         </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery-section">
+      <h1>Gallery</h1>
+      <div class="gallery">
+        <!-- Gambar-gambar dalam galeri -->
+        <img src="https://i.imgur.com/jtP9bg2.jpg" alt="Gambar 1" onclick="openLightbox(this)" />
+        <img src="https://i.imgur.com/x4OXH8z.png" alt="Gambar 2" onclick="openLightbox(this)" />
+        <img src="https://i.imgur.com/ZdEIzU5.jpeg" alt="Gambar 3" onclick="openLightbox(this)" />
+        <img src="https://i.imgur.com/ZdEIzU5.jpeg" alt="Gambar 3" onclick="openLightbox(this)" />
+        <img src="https://i.imgur.com/ZdEIzU5.jpeg" alt="Gambar 3" onclick="openLightbox(this)" />
+        <img src="https://i.imgur.com/ZdEIzU5.jpeg" alt="Gambar 3" onclick="openLightbox(this)" />
+        <img src="https://i.imgur.com/ZdEIzU5.jpeg" alt="Gambar 3" onclick="openLightbox(this)" />
+        <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+      </div>
+  
+      <!-- Lightbox -->
+      <div class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" />
       </div>
     </section>
 
@@ -158,5 +173,6 @@
         <a href="#">Privacy Policy</a>
       </div>
     </footer>
-  </body>
+</body>
+
 </html>

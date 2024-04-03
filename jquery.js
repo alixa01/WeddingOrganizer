@@ -76,3 +76,74 @@ function openLightbox(img) {
 function closeLightbox() {
   document.querySelector(".lightbox").style.display = "none";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("modal");
+  const contactLinks = document.getElementsByClassName("contact");
+  const closeBtn = document.querySelector(".modal-content .close");
+
+  for (let i = 0; i < contactLinks.length; i++) {
+    contactLinks[i].addEventListener("click", function () {
+      event.preventDefault();
+      modal.style.display = "block";
+      document.body.style.overflow = "hidden";
+    });
+  }
+
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  });
+
+  window.addEventListener("click", function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
+});
+
+function validateForm() {
+  var nama = document.getElementById("nama").value;
+  var email = document.getElementById("email").value;
+  var alamat = document.getElementById("alamat").value;
+  var pesan = document.getElementById("pesan").value;
+  var errorMessage = "";
+
+  if (nama.trim() == "") {
+    errorMessage += "Nama harus diisi.\n";
+  }
+
+  if (email.trim() == "") {
+    errorMessage += "Email harus diisi.\n";
+  } else {
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      errorMessage += "Email tidak valid.\n";
+    }
+  }
+
+  if (alamat.trim() == "") {
+    errorMessage += "Alamat harus diisi.\n";
+  }
+
+  if (pesan.trim() == "") {
+    errorMessage += "Pesan harus diisi.\n";
+  }
+
+  if (errorMessage !== "") {
+    alert(errorMessage);
+  } else {
+    kirimPesan();
+  }
+}
+function kirimPesan() {
+  var nama = document.getElementById("nama").value;
+  var email = document.getElementById("email").value;
+  var alamat = document.getElementById("alamat").value;
+  var pesan = document.getElementById("pesan").value;
+  var nomorWhatsApp = "6288657102200";
+  var templatePesan = "Halo Admin, \n\nSaya ingin memesan WO sebagai berikut: \nNama: " + nama + "\nEmail: " + email + "\nPesanan: " + pesan + "\n\nTerima kasih.";
+  var encodedPesan = encodeURIComponent(templatePesan);
+  window.location.href = "https://wa.me/" + nomorWhatsApp + "?text=" + encodedPesan;
+}

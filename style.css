@@ -126,6 +126,15 @@ header #contact {
   }
 }
 
+.dashboard-text a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease-out;
+  &:hover {
+    color: #000;
+  }
+}
+
 .dashboard-image img {
   border-radius: 50%;
   -webkit-border-radius: 50%;

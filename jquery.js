@@ -27,17 +27,17 @@ $(function () {
 
   const descriptions = {
     service1:
-      "This service simplifies one of the most crucial aspects: picking the perfect venue. Your wedding organizer scouts locations, negotiates contracts, and coordinates setup to align with your theme and guest count, ensuring your chosen space reflects your vision and atmosphere you wish to create, without you needing to worry about the details.",
+      "Layanan ini menyederhanakan salah satu aspek terpenting: memilih tempat yang sempurna. Penyelenggara pernikahan Anda mencari lokasi, menegosiasikan kontrak, dan mengoordinasikan pengaturan agar selaras dengan tema dan jumlah tamu Anda, memastikan ruang yang Anda pilih mencerminkan visi dan suasana yang ingin Anda ciptakan, tanpa Anda perlu khawatir tentang detailnya.",
     service2:
-      "From florists to photographers, caterers to musicians, this service involves curating a team of professionals that fit your style and budget. Your organizer handles communications, schedules, and payments, ensuring you get quality service and seamless integration of every element on your wedding day.",
+      "Dari toko bunga hingga fotografer, katering hingga musisi, layanan ini melibatkan kurasi tim profesional yang sesuai dengan gaya dan anggaran Anda. Penyelenggara Anda menangani komunikasi, jadwal, dan pembayaran, memastikan Anda mendapatkan layanan berkualitas dan integrasi tanpa batas dari setiap elemen pada hari pernikahan Anda.",
     service3:
-      "This is where your wedding's visual story comes to life. Through detailed discussions about your preferences and style, your organizer crafts a cohesive look that spans everything from invitations to table settings. They manage the design, setup, and breakdown, transforming your venue into a personalized wedding paradise.",
+      "Di sinilah kisah visual pernikahan Anda menjadi hidup. Melalui diskusi terperinci tentang preferensi dan gaya Anda, penyelenggara Anda membuat tampilan kohesif yang mencakup segala hal mulai dari undangan hingga pengaturan meja. Mereka mengelola desain, pengaturan, dan kerusakan, mengubah tempat Anda menjadi surga pernikahan yang dipersonalisasi.",
     service4:
-      "Every minute of your wedding day is planned with precision. This service includes drafting a detailed timeline that orchestrates all activities, from the ceremony to the reception, ensuring timely execution. Your organizer coordinates with vendors and the venue to keep everything on track, allowing you to immerse fully in your celebration.",
+      "Setiap menit dari hari pernikahan Anda direncanakan dengan presisi. Layanan ini termasuk menyusun garis waktu terperinci yang mengatur semua kegiatan, mulai dari upacara hingga resepsi, memastikan eksekusi tepat waktu. Penyelenggara Anda berkoordinasi dengan vendor dan tempat untuk menjaga semuanya tetap pada jalurnya, memungkinkan Anda untuk sepenuhnya tenggelam dalam perayaan Anda.",
     service5:
-      "This encompasses RSVP tracking, accommodations, and transportation for your guests. Your wedding organizer ensures your loved ones’ needs are met, from comfortable lodging to smooth transportation, making their experience memorable and hassle-free.",
+      "Ini mencakup pelacakan RSVP, akomodasi, dan transportasi untuk tamu Anda. Wedding organizer Anda memastikan kebutuhan orang yang Anda cintai terpenuhi, mulai dari penginapan yang nyaman hingga transportasi yang lancar, membuat pengalaman mereka berkesan dan bebas repot.",
     service6:
-      "On your wedding day, your organizer becomes the point person for all vendors, guests, and wedding party members, handling last-minute adjustments and ensuring the event runs smoothly. This service lets you and your partner focus solely on enjoying your special day, with the peace of mind that everything is under control behind the scenes.",
+      "Pada hari pernikahan Anda, penyelenggara Anda menjadi orang yang tepat untuk semua vendor, tamu, dan anggota pesta pernikahan, menangani penyesuaian menit terakhir dan memastikan acara berjalan lancar. Layanan ini memungkinkan Anda dan pasangan Anda fokus hanya untuk menikmati hari istimewa Anda, dengan ketenangan pikiran bahwa semuanya terkendali di belakang layar.",
   };
 
   const services = {
@@ -55,7 +55,7 @@ $(function () {
     $(".popup .description").text(descriptions[serviceId]);
     $(".popup").fadeIn(300, function () {
       $(this).addClass("show");
-      $("body").css("overflow", "hidden");
+      $("body").css("overflow");
     });
   });
 
@@ -66,3 +66,13 @@ $(function () {
     });
   });
 });
+
+function openLightbox(img) {
+  var lightboxImg = document.getElementById("lightbox-img");
+  lightboxImg.src = img.src;
+  document.querySelector(".lightbox").style.display = "block";
+}
+
+function closeLightbox() {
+  document.querySelector(".lightbox").style.display = "none";
+}

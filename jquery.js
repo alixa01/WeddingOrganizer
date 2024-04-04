@@ -147,3 +147,14 @@ function kirimPesan() {
   var encodedPesan = encodeURIComponent(templatePesan);
   window.location.href = "https://wa.me/" + nomorWhatsApp + "?text=" + encodedPesan;
 }
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    x.style.position = "fixed";
+  } else {
+    x.className = "topnav";
+    x.style.position = "fixed";
+  }
+}

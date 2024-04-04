@@ -148,13 +148,11 @@ function kirimPesan() {
   window.location.href = "https://wa.me/" + nomorWhatsApp + "?text=" + encodedPesan;
 }
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-    x.style.position = "fixed";
-  } else {
-    x.className = "topnav";
-    x.style.position = "fixed";
-  }
-}
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.querySelector('.dropdown-toggle');
+  const navUL = document.querySelector('nav ul');
+
+  toggle.addEventListener('click', function () {
+    navUL.classList.toggle('active-dropdown');
+  });
+});

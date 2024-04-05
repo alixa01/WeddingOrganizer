@@ -209,7 +209,7 @@ header #contact {
 .card-1 {
   min-height: 500px;
   min-width: 500px;
-  flex-basis: 40%;
+  flex-basis: 45%;
   padding: 0 5rem 2rem 5rem;
   box-sizing: border-box;
   display: flex;
@@ -522,7 +522,7 @@ form table td button {
     align-items: center;
   }
   .card-1 {
-    min-width: 100%;
+    width: 80%;
     padding: 0 2rem;
     margin-bottom: 2rem;
   }
@@ -547,7 +547,7 @@ form table td button {
   }
   .about {
     flex-direction: column;
-    height: 80vh;
+    height: 70vh;
   }
   .about-content {
     flex-direction: column;

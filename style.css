@@ -547,7 +547,7 @@ form table td button {
   }
   .about {
     flex-direction: column;
-    height: 70vh;
+    height: 80vh;
   }
   .about-content {
     flex-direction: column;
@@ -559,9 +559,9 @@ form table td button {
     margin-left: 20px;
   }
   .about-content .card-2 {
-    height: 35%;
+    height: 40%;
     width: 85%;
-    transform: translateX(10%) translateY(-100%);
+    transform: translateX(10%) translateY(-80%);
 }
 } 
 
